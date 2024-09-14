@@ -1,0 +1,86 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #141414;
+    color: white;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff000d;
+     background: rgba(0,0,0,0.5);
+    padding: 10px;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #b3b3b3;
+}
+
+/* Carousel styling */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%; 
+}
+
+.carousel {
+    display: flex;
+    width: 100%; 
+    overflow-x: auto; 
+    scroll-behavior: smooth; 
+    white-space: nowrap; 
+}
+
+.carousel img {
+    width: 200px;
+    margin-right: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1; /* Ensure buttons are above other content */
+}
+
+.carousel-button.left {
+    left: 10px;
+}
+
+.carousel-button.right {
+    right: 10px;
+}
